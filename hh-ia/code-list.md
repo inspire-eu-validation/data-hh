@@ -39,6 +39,12 @@ This data theme currently has the following empty code lists:
 
 **Notes**
 
+The ComponentTypeValue <a name="ComponentTypeValue"></a> codelist is abstract and it should be specilized by data providers. They may use the values specified in the INSPIRE Technical Guidance document on Human Health and Safety, in particular for components related to ground water quality, lake water quality, river water quality, ambient air quality and bathing water quality. The related attribute, i.e. "component" element in the UomConcentration type is not fully implemented in the xsd, so, at the moment, the check for this codelist is not implemented.
+
+For the MediaTypeValue <a name="MediaTypeValue"></a> codelist data providers may use the values specified in the INSPIRE Technical Guidance document on Human Health and Safety. The related attribute, i.e. "media" element in the UomConcentration type is not fully implemented in the xsd, so, at the moment, the check for this codelist is not implemented.
+
+For the NoiseSourceTypeValue <a name="NoiseSourceTypeValue"></a> codelist the related attribute, i.e. "source" element in the UomNoise type is not fully implemented in the xsd, so, at the moment, the check for this codelist is not implemented.
+
 ## Messages
 
 Identifier  |  Message text (parameters start with '$')
@@ -51,4 +57,10 @@ The namespace prefixes used as described in [README](./README.md#namespaces).
 
 Abbreviation                                               |  XPath expression      |Multiplicity   |Voidable
 ---------------------------------------------------------- | -----------------------|---------------|---------------------------------
-TO BE COMPLETED
+ChemicalValue <a name="ChemicalValue"></a> | //schema-element(hh:Biomarker)/hh:biomarkerName/hh:BiomarkerType/hh:chemical/@xlink:href | 1 | No
+DiseaseMeasureTypeValue <a name="DiseaseMeasureTypeValue"></a> | //schema-element(hh:Disease)/hh:diseaseMeasure/hh:DiseaseMeasure/hh:diseaseMeasureType/@xlink:href | 1 (1..\* for the parent) | No
+EnvHealthDeterminantTypeValue <a name="EnvHealthDeterminantTypeValue"></a> | //schema-element(hh:EnvHealthDeterminantMeasure)/hh:type/@xlink:href <br> //schema-element(hh:EnvHealthDeterminantStatisticalData)/hh:type/@xlink:href | 1 | No
+GeneralHealthTypeValue <a name="GeneralHealthTypeValue"></a> | //schema-element(hh:GeneralHealthStatistics)/hh:generalHealthName/@xlink:href | 1 | No
+HealthServicesTypeValue <a name="HealthServicesTypeValue"></a> | //schema-element(hh:HealthServicesStatistic)/hh:healthServiceType/@xlink:href | 1 | No
+MatrixValue <a name="MatrixValue"></a> | //schema-element(hh:Biomarker)/hh:biomarkerName/hh:BiomarkerType/hh:matrix/@xlink:href | 1 | No
+StatisticalAggregationMethodValue <a name="StatisticalAggregationMethodValue"></a> | //schema-element(hh:EnvHealthDeterminantStatisticalData)/hh:statisticalMethod/@xlink:href | 1 | No
