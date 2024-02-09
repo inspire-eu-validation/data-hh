@@ -8,7 +8,7 @@
 
 **Test method**
 
-* Validate each document against the latest INSPIRE official schema(s): https://inspire.ec.europa.eu/schemas/hh/4.0/HumanHealth.xsd, using strict XML schema validation.
+* Validate each document against the latest INSPIRE official schema(s): https://inspire.ec.europa.eu/schemas/hh/5.0/HumanHealth.xsd, using strict XML schema validation.
 
 **Reference(s)**: 
 
