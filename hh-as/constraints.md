@@ -10,9 +10,12 @@ The following check shall be manually performed for every feature in the dataset
 
 * The [COD](#COD) attribute shall be provided only if the [diseaseMeasureType](#diseaseMeasureType) attribute of diseaseMeasure takes a value that represents mortality.
 
-The following check is automatically performed for every feature in the dataset:
+The following checks are automatically performed for every feature in the dataset:
+* _Disease_ feature type:
+  * At least one of [pathology](#pathology) and [COD](#COD) attributes must not be empty (OCL: inv:self.COD->Empty implies self.pathology-> notEmpty inv:self.pathology->Empty implies self.COD -> notEmpty).
 
-* At least one of [pathology](#pathology) and [COD](#COD) attributes must not be empty (OCL: inv:self.COD->Empty implies self.pathology-> notEmpty inv:self.pathology->Empty implies self.COD -> notEmpty). 
+* _EnvHealthDeterminantMeasure_ feature type:
+  * An environmental health determinant measure shall be provided either as measure (attribute [measure](#measure)) or category of measure (attribute [category](#category)).
 
 
 **Reference(s)**: 
@@ -41,3 +44,5 @@ Abbreviation                                               |  XPath expression  
 COD <a name="COD"></a> | //schema-element(hh:Disease)/hh:COD/@xlink:href | 0..1 | No
 pathology <a name="pathology"></a> | //schema-element(hh:Disease)/hh:pathology/@xlink:href | 0..1 | No
 diseaseMeasureType <a name="diseaseMeasureType"></a> | //schema-element(hh:Disease)/hh:diseaseMeasure/hh:DiseaseMeasure/hh:diseaseMeasureType/@xlink:href | 1 | No
+measure <a name="measure"></a> | //schema-element(hh:EnvHealthDeterminantMeasure)/hh:measure <br> //schema-element(hh:EnvHealthDeterminantNoiseMeasure)/hh:measure <br> //schema-element(hh:EnvHealthDeterminantConcentrationMeasure)/hh:measure | 0..1 | No
+category <a name="category"></a> | //schema-element(hh:EnvHealthDeterminantMeasure)/hh:category/@xlink:href <br> //schema-element(hh:EnvHealthDeterminantNoiseMeasure)/hh:category/@xlink:href <br> //schema-element(hh:EnvHealthDeterminantConcentrationMeasure)/hh:category/@xlink:href | 0..1 | No
