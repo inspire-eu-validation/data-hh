@@ -30,6 +30,8 @@ This data theme currently has the following empty code lists:
 
 * [StatisticalAggregationMethodValue](#StatisticalAggregationMethodValue): http://inspire.ec.europa.eu/codelist/StatisticalAggregationMethodValue
 
+* [MeasureCategoryTypeValue](#MeasureCategoryTypeValue): http://inspire.ec.europa.eu/codelist/MeasureCategoryTypeValue
+
 
 **Reference(s)**: 
 
@@ -58,9 +60,13 @@ The namespace prefixes used as described in [README](./README.md#namespaces).
 Abbreviation                                               |  XPath expression      |Multiplicity   |Voidable
 ---------------------------------------------------------- | -----------------------|---------------|---------------------------------
 ChemicalValue <a name="ChemicalValue"></a> | //schema-element(hh:Biomarker)/hh:biomarkerName/hh:BiomarkerType/hh:chemical/@xlink:href | 1 | No
+ComponentTypeValue <a name="ComponentTypeValue"></a> | //schema-element(hh:EnvHealthDeterminantConcentrationMeasure)/hh:component/@xlink:href | 1 | No
 DiseaseMeasureTypeValue <a name="DiseaseMeasureTypeValue"></a> | //schema-element(hh:Disease)/hh:diseaseMeasure/hh:DiseaseMeasure/hh:diseaseMeasureType/@xlink:href | 1 (1..\* for the parent) | No
-EnvHealthDeterminantTypeValue <a name="EnvHealthDeterminantTypeValue"></a> | //schema-element(hh:EnvHealthDeterminantMeasure)/hh:type/@xlink:href <br> //schema-element(hh:EnvHealthDeterminantStatisticalData)/hh:type/@xlink:href | 1 | No
+EnvHealthDeterminantTypeValue <a name="EnvHealthDeterminantTypeValue"></a> | //schema-element(hh:EnvHealthDeterminantMeasure)/hh:type/@xlink:href <br> //schema-element(hh:EnvHealthDeterminantConcentrationMeasure)/hh:type/@xlink:href <br> //schema-element(hh:EnvHealthDeterminantNoiseMeasure)/hh:type/@xlink:href <br> //schema-element(hh:EnvHealthDeterminantStatisticalData)/hh:type/@xlink:href | 1 | No
 GeneralHealthTypeValue <a name="GeneralHealthTypeValue"></a> | //schema-element(hh:GeneralHealthStatistics)/hh:generalHealthName/@xlink:href | 1 | No
 HealthServicesTypeValue <a name="HealthServicesTypeValue"></a> | //schema-element(hh:HealthServicesStatistic)/hh:healthServiceType/@xlink:href | 1 | No
 MatrixValue <a name="MatrixValue"></a> | //schema-element(hh:Biomarker)/hh:biomarkerName/hh:BiomarkerType/hh:matrix/@xlink:href | 1 | No
+MediaTypeValue <a name="MediaTypeValue"></a> | //schema-element(hh:EnvHealthDeterminantConcentrationMeasure )/hh:media/@xlink:href | 1 | No
+NoiseSourceTypeValue <a name="NoiseSourceTypeValue"></a> | //schema-element(hh:EnvHealthDeterminantNoiseMeasure )/hh:source/@xlink:href | 1 | No
 StatisticalAggregationMethodValue <a name="StatisticalAggregationMethodValue"></a> | //schema-element(hh:EnvHealthDeterminantStatisticalData)/hh:statisticalMethod/@xlink:href | 1 | No
+MeasureCategoryTypeValue <a name="MeasureCategoryTypeValue"></a> | //schema-element(hh:EnvHealthDeterminantMeasure)/hh:category/@xlink:href <br> //schema-element(hh:EnvHealthDeterminantConcentrationMeasure)/hh:category/@xlink:href <br> //schema-element(hh:EnvHealthDeterminantNoiseMeasure)/hh:category/@xlink:href | 0..1 | No
