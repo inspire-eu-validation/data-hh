@@ -30,4 +30,4 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                          |  XPath expression
 ----------------------------------------------------- | ------------------------------------------------------------------
-features <a name="features"></a>   |  //schema-element(hh:Biomarker) <br> //schema-element(hh:Disease) <br> //schema-element(hh:GeneralHealthStatistics) <br> //schema-element(hh:HealthServicesStatistic) <br> //schema-element(hh:EnvHealthDeterminantMeasure) <br> //schema-element(hh:EnvHealthDeterminantStatisticalData)
+features <a name="features"></a>   |  //schema-element(hh:Biomarker) <br> //schema-element(hh:Disease) <br> //schema-element(hh:GeneralHealthStatistics) <br> //schema-element(hh:HealthServicesStatistic) <br> //schema-element(hh:EnvHealthDeterminantMeasure) <br> //schema-element(hh:EnvHealthDeterminantStatisticalData) <br> //schema-element(hh:EnvHealthDeterminantConcentrationMeasure) <br> //schema-element(hh:EnvHealthDeterminantNoiseMeasure)
