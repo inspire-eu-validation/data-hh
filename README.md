@@ -6,12 +6,12 @@ The specification specifies the following conformance classes:
 
 | Conformance class | Standardization target |
 | ----------------- | ---------------------- |
-| [GML application schemas, Human Health and Safety](http://inspire.ec.europa.eu/id/ats/data-hh/3.0/hh-gml) | INSPIRE spatial data set encoded in GML, Human Health and Safety features |
-| [Application Schema, Human Health and Safety](http://inspire.ec.europa.eu/id/ats/data-hh/3.0/hh-as) | INSPIRE spatial data set |
-| [Reference Systems, Human Health and Safety](http://inspire.ec.europa.eu/id/ats/data-hh/3.0/hh-rs) | INSPIRE spatial data set |
-| [Data Consistency, Human Health and Safety](http://inspire.ec.europa.eu/id/ats/data-hh/3.0/hh-dc) | INSPIRE spatial data set |
-| [Information Accessibility, Human Health and Safety](http://inspire.ec.europa.eu/id/ats/data-hh/3.0/hh-ia) | INSPIRE spatial data set |
-| [Portrayal, Human Health and Safety](http://inspire.ec.europa.eu/id/ats/data-hh/3.0/hh-portrayal) | INSPIRE view service |
+| [GML application schemas, Human Health and Safety](./hh-gml) | INSPIRE spatial data set encoded in GML, Human Health and Safety features |
+| [Application Schema, Human Health and Safety](./hh-as) | INSPIRE spatial data set |
+| [Reference Systems, Human Health and Safety](./hh-rs) | INSPIRE spatial data set |
+| [Data Consistency, Human Health and Safety](./hh-dc) | INSPIRE spatial data set |
+| [Information Accessibility, Human Health and Safety](./hh-ia) | INSPIRE spatial data set |
+| [Portrayal, Human Health and Safety](./hh-portrayal) | INSPIRE view service |
 
 
 ## Approach

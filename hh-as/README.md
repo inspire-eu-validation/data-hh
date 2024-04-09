@@ -44,9 +44,9 @@ The following abbreviations are used in the test text for referring to external 
 
 Abbreviation                     | Document name
 -------------------------------- | --------------------------------------------------
-TG DS-HH <a name="ref_TG_DS_HH"></a>   | [INSPIRE Data Specification on Human Health and Safety – Technical Guidelines version 3.0](http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_HH_v3.0.pdf)
-TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Template version 3.0rc3](http://inspire.jrc.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_Template_v3.0rc3.pdf)
-IR-ISDSS <a name="ref_IR-ISDSS"></a>   | [Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services](https://eur-lex.europa.eu/eli/reg/2010/1089/2014-12-31)
+TG DS-HH <a name="ref_TG_DS_HH"></a>   | [INSPIRE Data Specification on Human Health and Safety – Technical Guidelines](https://knowledge-base.inspire.ec.europa.eu/publications/inspire-data-specification-hydrography-technical-guidelines_en)
+TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Template version 3.0rc3](https://knowledge-base.inspire.ec.europa.eu/publications/data-specifications-template_en)
+IR-ISDSS <a name="ref_IR-ISDSS"></a>   | [Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services](https://eur-lex.europa.eu/eli/reg/2010/1089)
 
 ## Test Cases
 
@@ -63,8 +63,8 @@ The following prefixes are used to refer to the corresponding XML namespaces in 
 
 Prefix         | Namespace
 -------------- | -------------------------------------------------
-hh      	   | http://inspire.ec.europa.eu/schemas/hh/4.0
-base           | http://inspire.ec.europa.eu/schemas/base/3.3
+hh         	   | http://inspire.ec.europa.eu/schemas/hh/5.0
+base           | http://inspire.ec.europa.eu/schemas/base/4.0
 gml            | http://www.opengis.net/gml/3.2
 wfs            | http://www.opengis.net/wfs/2.0
 xsi            | http://www.w3.org/2001/XMLSchema-instance
