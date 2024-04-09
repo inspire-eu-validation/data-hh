@@ -38,6 +38,8 @@ The instantiable feature types are:
 * Health Services Statistic
 * Environmental Health Determinant Measure
 * Environmental Health Determinant Statistical Data
+* EnvHealthDeterminantConcentrationMeasure
+* EnvHealthDeterminantNoiseMeasure
 
 *Note*: When "features" or "spatial objects" are mentioned in the test cases, this refers only to instances of feature types of this application schema, not to any types specified in any other application schema.
 
@@ -47,8 +49,8 @@ The following abbreviations are used in the test text for referring to external 
 
 Abbreviation                     | Document name
 -------------------------------- | --------------------------------------------------
-TG DS-HH <a name="ref_TG_DS_HH"></a>   | [INSPIRE Data Specification on Human Health and Safety – Technical Guidelines version 3.0](http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_HH_v3.0.pdf)
-TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Template version 3.0rc3](http://inspire.jrc.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_Template_v3.0rc3.pdf)
+TG DS-HH <a name="ref_TG_DS_HH"></a>   | [INSPIRE Data Specification on Human Health and Safety – Technical Guidelines](https://knowledge-base.inspire.ec.europa.eu/publications/inspire-data-specification-hydrography-technical-guidelines_en)
+TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Template version 3.0rc3](https://knowledge-base.inspire.ec.europa.eu/publications/data-specifications-template_en)
 
 ## Test Cases
 
@@ -64,10 +66,11 @@ The following prefixes are used to refer to the corresponding XML namespaces in 
 Prefix         | Namespace
 -------------- | -------------------------------------------------
 gml            | http://www.opengis.net/gml/3.2
-hh             | http://inspire.ec.europa.eu/schemas/hh/4.0
+hh             | http://inspire.ec.europa.eu/schemas/hh/5.0
 
 The following variables are used to refer to the corresponding Xpath expressions in all test descriptions:
 
 Variable       | Value
 -------------- | -------------------------------------------------
-$features      |  //schema-element(hh:Biomarker) <br> //schema-element(hh:Disease) <br> //schema-element(hh:GeneralHealthStatistics) <br> //schema-element(hh:HealthServicesStatistic) <br> //schema-element(hh:EnvHealthDeterminantMeasure) <br> //schema-element(hh:EnvHealthDeterminantStatisticalData)
+$features      |  //schema-element(hh:Biomarker) <br> //schema-element(hh:Disease) <br> //schema-element(hh:GeneralHealthStatistics) <br> //schema-element(hh:HealthServicesStatistic) <br> //schema-element(hh:EnvHealthDeterminantMeasure) <br> //schema-element(hh:EnvHealthDeterminantStatisticalData) <br> //schema-element(hh:EnvHealthDeterminantConcentrationMeasure) <br> //schema-element(hh:EnvHealthDeterminantNoiseMeasure)
+
